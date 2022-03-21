@@ -4,13 +4,17 @@ p {
 h3{
   color: rgb(0, 255, 76);
 }
-h1{
+h1{font-size: 50px;
+  text-align: center;
   color: rgba(24, 25, 99, 0.801);
 }
 li.special {
   color: orange;
   font-weight: bold;
 }
+html {
+  font-family: 'Roboto Mono', monospace;}
+
 @media screen{
   div{
       width:880px;
