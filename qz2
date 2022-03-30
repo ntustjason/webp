@@ -1,16 +1,24 @@
 <!DOCTYPE html> 
-<html> 
-<body> 
-<p>Click the button to make a BUTTON element with text.</p> 
-<button onclick="myFunction()">Try it</button> 
-  <button onclick="myFunction()">CLICK ME</button> 
-<script> 
-function myFunction() { 
-  var btn = document.createElement("BUTTON"); 
-  btn.innerHTML = "CLICK ME”; 
+ <html> 
+<head> 
+  <title>My Document</title> 
+  <script > 
+  function change() { 
+    var header = document.getElementsByTagName("H1").item(0); 
+    header.innerHTML = "CSIE@CGU"; 
+    var para = document.getElementsByTagName("P").item(0); 
+    para.innerHTML = "怎麼那麼棒！！."; 
+     var btn =document.createElement("BUTTON"); 
+  btn.innerHTML = "try it”; 
   btn.setAttribute("id", "btn"); 
   document.body.appendChild(btn); 
-} 
-</script> 
+   
+  } 
+  </script> 
+  <head> 
+<body> 
+  <input type="button" value="Change this document." onclick="change()"> 
+  <h1 id="H1">CGU</h1> 
+  <p id="P">好棒棒</p> 
 </body> 
 </html>
