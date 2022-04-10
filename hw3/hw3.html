@@ -21,8 +21,6 @@
    var s="";
    var s1="";
    var str="";
-   var codeArray = [];
-   var index = s.length;
    function showzm(){
         
         for(var i=1;i<=7;i++){
@@ -45,21 +43,14 @@ function a(){
    window.addEventListener("load",showzm);
    window.addEventListener("load",generate);
 
-window.onload = function(){
-document.onkeydown=function(event){
- var keyCode = event.keyCode; 
- var code = String.fromCharCode(keyCode);
- for ( var i = 0; i < codeArray.length; i++) {
-  var label = codeArray[i];
-  if(label.code==code){
-    clearInterval(label.interval_id);
-    label.parentNode.removeChild(label);
-    codeArray.splice(i,1);
-   break;
-  }
- }
-};
-};
+function logkey(){
+ var h1 = document.querySelector('h1');
+asc=event.keyCode;
+key=String.fromCharCode(asc);
+
+s=s.substring(0,s.length-1)
+}
+   document.addEventListener("keydown",logkey);
 </script>
 </body>
 </html>
