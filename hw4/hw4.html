@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+.card{
+  /* 設定父親定位點 */
+  position: absolute;
+  top:5%;
+  width: 270px;
+  left:0%;
+  margin: 5px;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+    </style>
+</head>
+  
+<body>
+    <script>
+        $(document).ready(function(){
+            // Start animation
+            $(".start-btn").click(function(){
+              $(".card").animate({left: "+=150px"}, 1000);
+            });
+         
+            // Stop running animation
+            $(".stop-btn").click(function(){
+              $(".card").stop();
+            });
+            
+            // Start animation in the opposite direction
+            $(".back-btn").click(function(){
+              $(".card").animate({left: "-=150px"}, 1000);
+            });
+         
+            // Reset to default
+            $(".reset-btn").click(function(){
+              $(".card").animate({left: "0"}, "fast");
+            });
+        });
+        </script>
+    
+        <div class="card">
+          <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" alt="">
+        </div>
+        
+      
+      <button class="start-btn">start !</button>
+      <button class="stop-btn">Stop!</button>
+      <button class="back-btn">back !</button>
+      <button class="reset-btn">reset !</button>
+</body>
+</html>
