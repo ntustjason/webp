@@ -7,5 +7,5 @@ function myfun(){
       var hh = today.getHours();
       var mm = today.getMinutes();
       var ss = today.getSeconds();
-      document.getElementById('demo').innerHTML = hh + ":" + mm + ":" + ss;
+      document.getElementById('demo').innerHTML ="cgu timer<br>"+hh + ":" + mm + ":" + ss;
 }
