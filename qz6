@@ -1,0 +1,15 @@
+////////html
+<h1 id="demo"></h1>
+////////js
+setInterval(myfun,1000);
+var d2 = new Date();
+var same1 = d2.getHours();
+var d3 = new Date();
+var same2 = d3.getMinutes();
+var d4 = new Date();
+var same3 = d4.getSeconds();
+function myfun(){
+  x=document.getElementById("demo");
+  x.innerHTML=same1;
+  same1++;
+}
