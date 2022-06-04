@@ -21,7 +21,7 @@ class Todoitem extends React.Component {
 				// 如果完成加上刪除線
 				style={
                   status ? 
-                  { textDecoration: 'line-through' } : 
+                  { textDecoration: 'line-through',color: '#EA0000'  } : 
                   { textDecoration: 'none' }
                 }
 			>
